@@ -30,15 +30,19 @@ class Options:
             for i in range(0,(len(hydrogens))):
                 x = str(hydrogens[i]).strip(' ')
                 hydrogens[i] = x
+
+            hydrogens_to_str = " ".join(str(e) for e in hydrogens)
+            hydrogens_code = 'name ' + hydrogens_to_str 
             
             os.chdir('HBondAuto')
 
         except ValueError:
             raise ValueError("There is no files with pdb extension.")
 
-        return hydrogens
+        return hydrogens_code
 
     def get_acceptors(self, acceptor_selector):
+        '''get acceptors from pdb file'''
 
         acceptors = []
         try:
@@ -60,13 +64,17 @@ class Options:
                 x = str(acceptors[i]).strip(' ')
                 acceptors[i] = x
 
+            acceptor_to_str = " ".join(str(e) for e in acceptors)
+            acceptors_code = 'name ' + acceptor_to_str 
+
             os.chdir('HBondAuto')
 
         except ValueError:
             raise ValueError("There is no files with pdb extension.")        
 
-        return acceptors
+        return acceptors_code
 
-    def get_important_bonds():
-        # get only interested bonds
+    def get_important_bonds(self):
+        '''get only interested bonds'''
+
         return
