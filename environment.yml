@@ -1,0 +1,22 @@
+name: hbondanalysis
+
+channels:
+  - conda-forge
+  - defaults
+  - schrodinger
+
+# #for windows uncomment this
+# dependencies:
+#   - python=3.8
+#   - matplotlib=3.5.2
+#   - mdanalysis=2.2.0
+#   - pandas=1.4.2
+#   - numpy=1.22.3
+
+#For linux uncomment this
+dependencies:
+  - python=3.8
+  - matplotlib=3.5.2
+  - mdanalysis=2.2.0
+  - pandas=1.4.2
+  - numpy=1.23.1
