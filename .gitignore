@@ -3,6 +3,7 @@ __pycache__/
 
 # Outputs
 output/
+archive/
 
 # vscode
 .vscode
@@ -11,3 +12,4 @@ output/
 
 # development
 input/
+analysis.ipynb
